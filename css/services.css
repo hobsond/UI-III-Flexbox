@@ -75,8 +75,27 @@ body{
 div.container{
 	background-color: cornsilk;
 	width:80%;
-	margin: 0 auto;
+	margin: 3% auto;
 	box-shadow: 1px 0 20px salmon;
+}
+.inner{
+    width: 80%;
+    margin: 2% auto;
+}
+section:nth-child(3),section:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul{
+    margin: 3% 0;
+}
+li{
+    list-style: outside;
+    line-height: 3;
+}
+h6{
+    text-align: center;
 }
 h2,h3{
 	font-family: 'Acme', sans-serif;
@@ -93,45 +112,28 @@ header{
 	background:lightgray;
 	height: fit-content;
 	box-shadow: 0 0 5px black;
-	position: fixed;
-	top: 0;
+    position: fixed;
+    display: flex;
+    align-content:center ;
+    top: 0;
+    right: 10%;
 }
 header nav{
-	width: 85%;
-}
-
-header nav, header img{
-	display: inline-block;
-	
+    width: 85%;
+    display: flex;
 }
 
 header img{
 	box-shadow: -4px -7px 12px black;
 }
 
-header nav a {
-	margin: 0 1%;
-	text-decoration: none;
-	display: inline-block;
-	color: white;	
-	font-family: 'Mukta', sans-serif;
-	font-size: 19px;
-
-	padding: 0 3.4%;
-	transition: color, background-color,width,font-size ease-in-out .3s;
-	text-shadow: 2px -1px 4px black;
-
-}
-header nav a:hover{
-	color:yellow;
-	font-size: 22px;
-	font-weight: bold;
-	background-color: turquoise;
-	
-}
 section{
     margin: 3.4% auto;
     border-bottom: 4px solid gray;
+}
+section div{
+    width: 45%;
+    margin: 4% 0;
 }
 section:nth-child(4){
     border-bottom: none;
@@ -140,10 +142,25 @@ section:nth-child(4){
     display: flex;
     justify-content: center;
 }
+.sec1 div{
+    width: 100%;
+}
 .sec1 div img{
     width:100%;
     object-fit: contain;
 }
 .sec1 div:nth-child(2){
     margin: 3% 0;
+}
+
+.sec2 div{
+    border:solid 1px black;
+    background-color: lightblue;
+    padding: 5%;
+    box-shadow: 0 0 1rem slategrey;
+}
+.sec2 div button{
+    padding: 3% 6%;
+    margin:5% 0 0 9%;
+    border-radius: 20%;
 }
