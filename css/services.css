@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+*{
+	max-width: 100%;
+}
+body{
+	box-sizing: border-box;
+	background-color: aqua;
+}
+
+div.container{
+	background-color: cornsilk;
+	width:80%;
+	margin: 0 auto;
+	box-shadow: 1px 0 20px salmon;
+}
+h2,h3{
+	font-family: 'Acme', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+	
+}
+p{
+	font-family: 'Amatic SC', cursive;
+	font-size: 21px;
+}
+header{
+	width: 80%;
+	background:lightgray;
+	height: fit-content;
+	box-shadow: 0 0 5px black;
+	position: fixed;
+	top: 0;
+}
+header nav{
+	width: 85%;
+}
+
+header nav, header img{
+	display: inline-block;
+	
+}
+
+header img{
+	box-shadow: -4px -7px 12px black;
+}
+
+header nav a {
+	margin: 0 1%;
+	text-decoration: none;
+	display: inline-block;
+	color: white;	
+	font-family: 'Mukta', sans-serif;
+	font-size: 19px;
+
+	padding: 0 3.4%;
+	transition: color, background-color,width,font-size ease-in-out .3s;
+	text-shadow: 2px -1px 4px black;
+
+}
+header nav a:hover{
+	color:yellow;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: turquoise;
+	
+}
+section{
+    margin: 3.4% auto;
+    border-bottom: 4px solid gray;
+}
+section:nth-child(4){
+    border-bottom: none;
+}
+.sec1 div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+.sec1 div img{
+    width:100%;
+    object-fit: contain;
+}
+.sec1 div:nth-child(2){
+    margin: 3% 0;
+}
