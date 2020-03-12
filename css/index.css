@@ -75,38 +75,69 @@ body{
 div.container{
 	background-color: cornsilk;
 	width:80%;
-	margin: 0 auto;
+	margin: 3% auto;
 	box-shadow: 1px 0 20px salmon;
+}
+.inner{
+    width: 80%;
+    margin: 2% auto;
+}
+section:nth-child(3),section:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul{
+    margin: 3% 0;
+}
+li{
+    list-style: outside;
+    line-height: 3;
+}
+h6{
+    text-align: center;
 }
 h2,h3{
 	font-family: 'Acme', sans-serif;
-	font-size: 24px;
+    font-size: 24px;
+    font-weight: bold;
 	
 }
-p{
-	font-family: 'Amatic SC', cursive;
-	font-size: 21px;
+p,li{
+	font-family: 'Roboto Mono', monospace;
+
+	font-size: 18px;
 }
 header{
 	width: 80%;
 	background:lightgray;
 	height: fit-content;
 	box-shadow: 0 0 5px black;
-	position: fixed;
-	top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content:center ;
+    top: 0;
+    right: 10%;
 }
 header nav{
-	width: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
 }
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+    
 
-header nav, header img{
-	display: inline-block;
-	
 }
 
 header img{
 	box-shadow: -4px -7px 12px black;
 }
+
 
 header nav a {
 	margin: 0 1%;
@@ -135,7 +166,7 @@ section{
 .sec1{
 	width: 100%;
 	margin: 0 auto;
-	background-color: slategray;
+	background-color: white;
 	transition: background-color ease-in-out .8s;
 	transition-delay: .3s;
 	padding: 5px;
@@ -216,9 +247,6 @@ section{
 	background-color: rgb(90, 111, 133);
 }
 
-.sec2{
-	background-color: burlywood;
-}
 
 .inner-div{
 	display: inline-block;
@@ -229,10 +257,14 @@ section{
 	width: 40%;
 	
 }
+.middle-img{
+	width: 100%;
+}
 .sec2 div img{
 	width: 100%;
 	object-fit: contain;
 }
+
 
 address p{
 	line-height: 2;
